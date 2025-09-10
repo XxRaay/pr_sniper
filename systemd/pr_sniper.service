@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/pr_watcher/venv/bin/python /opt/pr_watcher/bot.py
-WorkingDirectory=/opt/pr_watcher
+ExecStart=/opt/pr_sniper/venv/bin/python /opt/pr_sniper/pr_sniper.py
+WorkingDirectory=/opt/pr_sniper
 Restart=always
 RestartSec=5
 User=YOUR_USERNAME
@@ -15,3 +15,4 @@ StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
+
