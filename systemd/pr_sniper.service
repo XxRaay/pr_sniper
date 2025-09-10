@@ -1,0 +1,17 @@
+[Unit]
+Description=GitHub PR Watcher Bot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/pr_watcher/venv/bin/python /opt/pr_watcher/bot.py
+WorkingDirectory=/opt/pr_watcher
+Restart=always
+RestartSec=5
+User=YOUR_USERNAME
+Group=YOUR_USERNAME
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
