@@ -1,5 +1,5 @@
 [Unit]
-Description=GitHub PR Watcher Bot
+Description=GitHub PR Sniper Bot
 After=network.target
 
 [Service]
@@ -15,4 +15,5 @@ StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
+
 
